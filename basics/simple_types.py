@@ -107,3 +107,10 @@ print("result = ", result)
 # El resultado es float porque al sumar int + float, Python convierte todo a float
 
 # LECCIÓN CLAVE: En operaciones mixtas, Python convierte al tipo más "amplio" (int → float)
+
+
+my_string = "hello"
+print(my_string[1])  # Acceso al segundo carácter de la cadena
+print(my_string[-1])  # Acceso al último carácter de la cadena
+print(my_string[:3])  # Slicing: primeros tres caracteres
+

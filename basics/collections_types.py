@@ -65,50 +65,30 @@ print(list(number_range))    # Convertimos a lista para visualizar los valores
 # NOTA: range() es útil para bucles y no consume memoria por todos los números
 # Para ver los valores, hay que convertirlo a lista con list()
 
-# =============================================================================
-# OPERACIONES COMUNES CON LISTAS (Ejemplos adicionales)
-# =============================================================================
-
-# Acceso por índice (comienza en 0)
-print("Primera nota:", student_grades[0])    # Primera posición (índice 0)
-# Salida esperada: Primera nota: 8.5
-
-print("Última nota:", student_grades[-1])    # Última posición (índice -1)
-# Salida esperada: Última nota: 9.1
-
-# Slicing (rebanado) - obtener sublistas
-print("Primeras 3 notas:", student_grades[0:3])  # Índices 0, 1, 2 (3 es exclusivo)
-# Salida esperada: Primeras 3 notas: [8.5, 9.2, 7.8]
-
-print("Últimas 3 notas:", student_grades[-3:])   # Últimos 3 elementos
-# Salida esperada: Últimas 3 notas: [8.4, 9.1]
-
-# Métodos comunes de listas (las listas son mutables)
-numbers = [3, 1, 4, 1, 5, 9, 2, 6]
-
-numbers.append(7)           # Añade al final
-# numbers ahora: [3, 1, 4, 1, 5, 9, 2, 6, 7]
-
-numbers.insert(0, 0)        # Inserta en posición específica
-# numbers ahora: [0, 3, 1, 4, 1, 5, 9, 2, 6, 7]
-
-numbers.remove(1)           # Elimina la primera ocurrencia del valor
-# numbers ahora: [0, 3, 4, 1, 5, 9, 2, 6, 7] (eliminó el primer 1)
-
-numbers.sort()              # Ordena la lista in-place (modifica la original)
-print("Lista ordenada:", numbers)
-# Salida esperada: Lista ordenada: [0, 1, 2, 3, 4, 5, 6, 7, 9]
-
-print("Longitud de la lista:", len(numbers))  # Número de elementos
-# Salida esperada: Longitud de la lista: 9
+student_grades = list(range(1, 10, 2))  # Números del 1 al 9 con paso 2
+print(student_grades)  # Salida esperada: [1, 3, 5, 7, 9]
 
 # =============================================================================
-# PUNTOS CLAVE PARA RECORDAR
+# 3. LISTAS Y OPERACIONES BÁSICAS
 # =============================================================================
-# 1. Las listas son MUTABLES: se pueden modificar después de crearlas
-# 2. Las listas son ORDENADAS: mantienen el orden de inserción
-# 3. Las listas permiten DUPLICADOS: el mismo valor puede aparecer varias veces
-# 4. Las listas pueden contener CUALQUIER TIPO de dato, incluso mezclados
-# 5. range() es eficiente para generar secuencias, pero no es una lista
-# 6. Los índices comienzan en 0, y los negativos cuentan desde el final
+# Las listas permiten almacenar múltiples valores y calcular estadísticas fácilmente
+student_grades = [9.1, 8.8, 7.5]
 
+average = sum(student_grades) / len(student_grades)  # Calcula la media de las notas
+print("Average grade:", average)  # Salida esperada: Average grade: 8.466666666666667
+
+# =============================================================================
+# 4. DICCIONARIOS (DICT)
+# =============================================================================
+# Los diccionarios almacenan pares clave-valor, útiles para asociar nombres con valores
+student_grades = {"Alice": 9.1, "Bob": 8.8, "Charlie": 7.5}
+print(student_grades.get("Alice")) # Salida esperada: 9.1
+
+mean_grade = sum(student_grades.values()) / len(student_grades)  # Media de las notas usando los valores del diccionario
+print("Mean grade:", mean_grade)  # Salida esperada: Mean grade: 8.466666666666667
+
+# =============================================================================
+# 5. TUPLAS (TUPLE)
+# =============================================================================
+# Las tuplas son colecciones inmutables, útiles para datos que no deben cambiar
+monday_temperatures = (22.5, 24.0, 19.8, 21.5) # Temperaturas del lunes. Las tuplas son inmutables
