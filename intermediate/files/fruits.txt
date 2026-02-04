@@ -5,5 +5,3 @@ mandarin
 watermelon
 pomegranate
 banana
-banana
-banana
