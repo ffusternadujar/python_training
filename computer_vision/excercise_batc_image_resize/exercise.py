@@ -11,8 +11,8 @@ OBJETIVOS:
 - Manejar rutas de sistema de archivos.
 """
 import os
-import cv2
 import glob
+import cv2
 
 
 def resize_images_in_folder(folder_path):
@@ -41,5 +41,5 @@ def resize_images_in_folder(folder_path):
 
 
 if __name__ == "__main__":
-    folder_path = "sample_images"
-    resize_images_in_folder(folder_path)
+    SAMPLE_IMAGES_PATH = "sample_images"
+    resize_images_in_folder(SAMPLE_IMAGES_PATH)
