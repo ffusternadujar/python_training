@@ -3,7 +3,7 @@ name: python-linter
 on: [pull_request]
 
 jobs:
-  build:
+  python-linter:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
