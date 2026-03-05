@@ -9,6 +9,10 @@ OBJETIVOS:
 - Practicar el uso de OpenCV para procesamiento de imágenes.
 - Utilizar glob para listar archivos.
 - Manejar rutas de sistema de archivos.
+EJECUCIÓN:
+- Asegúrate de tener OpenCV instalado (`pip install opencv-python`).
+- Coloca tus imágenes .jpg en la carpeta `sample_images`.
+- Ejecuta el script y verifica que las imágenes redimensionadas se guarden.
 """
 import os
 import glob
