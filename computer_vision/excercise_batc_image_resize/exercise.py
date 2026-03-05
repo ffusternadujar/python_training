@@ -25,8 +25,6 @@ def resize_images_in_folder(folder_path):
     Args:
         folder_path (str): The path to the folder containing the images to be resized.
 
-    Returns:
-        None
     """
 
     if not os.path.exists(folder_path):
