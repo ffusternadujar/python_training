@@ -35,4 +35,4 @@ jobs:
     - name: Analysing the code with pylint
       if: steps.changed-files.outputs.files != ''
       run: |
-        pylint ${{ steps.changed-files.outputs.files }}
+        pylint --rcfile=pylintrc ${{ steps.changed-files.outputs.files }}
