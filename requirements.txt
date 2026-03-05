@@ -5,3 +5,4 @@ openpyxl>=3.1.5
 geopy>=2.4.1
 opencv-python>=4.5.5
 matplotlib>=3.7.1
+glob2 >=0.7
